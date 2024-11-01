@@ -1,0 +1,12 @@
+.s3dc-cube-wrapper {
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.s3dc-cube-wrapper > canvas {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}

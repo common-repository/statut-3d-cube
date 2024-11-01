@@ -1,0 +1,35 @@
+.s3dc-notice {
+    padding: .75rem 1.25rem;
+    width: max-content;
+}
+
+.s3dc-setting {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.s3dc-setting > label {
+    font-size: 14px;
+}
+
+.s3dc-setting > input[type=text] {
+    width: 100%;
+}
+
+.s3dc-setting > textarea {
+    margin-bottom: 10px;
+    height: 105px;
+}
+
+.s3dc-setting-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.s3dc-setting-group > label {
+    font-size: 14px;
+}
+
+.s3dc-link-wrapper, .s3dc-option-target-wrapper {
+    display: none;
+}

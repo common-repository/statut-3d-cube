@@ -1,0 +1,105 @@
+<div>
+    <div class="card" id="s3dc-generator">
+        <h1>Cube constructor</h1>
+        <h2>Configure the sides of the cube</h2>
+        <label>Upload the required images to the Media Library and paste its URLs into the fields
+            below</label>
+
+        <div class="s3dc-setting-group">
+            <input id="s3dc-option-links" type="checkbox" />
+            <label for="s3dc-option-links">Add Links to the Cube sides</label>
+        </div>
+
+        <div class="s3dc-setting-group">
+            <label>
+                Front side
+            </label>
+            <div class="s3dc-setting">
+                <input name="side1" class="s3dc-property-side" type="text" placeholder="Image url" />
+            </div>
+            <div class="s3dc-setting s3dc-link-wrapper">
+                <input name="link1" class="s3dc-property-link" type="text" placeholder="Link" />
+            </div>
+        </div>
+
+        <div class="s3dc-setting-group">
+            <label>
+                Right side
+            </label>
+            <div class="s3dc-setting">
+                <input name="side2" class="s3dc-property-side" type="text" placeholder="Image url" />
+            </div>
+            <div class="s3dc-setting s3dc-link-wrapper">
+                <input name="link2" class="s3dc-property-link" type="text" placeholder="Link" />
+            </div>
+        </div>
+
+        <div class="s3dc-setting-group">
+            <label>
+                Back side
+            </label>
+            <div class="s3dc-setting">
+                <input name="side3" class="s3dc-property-side" type="text" placeholder="Image url" />
+            </div>
+            <div class="s3dc-setting s3dc-link-wrapper">
+                <input name="link3" class="s3dc-property-link" type="text" placeholder="Link" />
+            </div>
+        </div>
+
+        <div class="s3dc-setting-group">
+            <label>
+                Left side
+            </label>
+            <div class="s3dc-setting">
+                <input name="side4" class="s3dc-property-side" type="text" placeholder="Image url" />
+            </div>
+            <div class="s3dc-setting s3dc-link-wrapper">
+                <input name="link4" class="s3dc-property-link" type="text" placeholder="Link" />
+            </div>
+        </div>
+
+        <div class="s3dc-setting-group s3dc-option-target-wrapper">
+            <label>
+                Link behavior
+            </label>
+            <div class="s3dc-setting">
+                <input name="target" id="s3dc-option-target-blank" class="s3dc-property-target" type="radio" checked
+                    value="_blank" />
+                <label for="s3dc-option-target-blank">
+                    Open in a new tab
+                </label>
+            </div>
+            <div class="s3dc-setting">
+                <input name="target" id="s3dc-option-target-self" class="s3dc-property-target" type="radio"
+                    value="_self" />
+                <label for="s3dc-option-target-self">
+                    Open in the current tab
+                </label>
+            </div>
+        </div>
+
+        <div id="s3dc-output-wrapper" style="display:none;">
+            <h2>Result</h2>
+            <div class="s3dc-setting">
+                <textarea id="s3dc-output" class="large-text"></textarea>
+                <button id="s3dc-copy-button" class="button" type="checkbox">Copy shortcode</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h1>Settings</h1>
+        <form method="post" action="options.php">
+            <?php settings_fields('s3dc-settings-group');?>
+            <?php do_settings_sections('s3dc');?>
+            <?php submit_button();?>
+        </form>
+    </div>
+
+    <div class="card">
+        © 2020 Statut Systems
+        <br />
+        <a href="https://playable.one/" target="_blank">Contact us</a>
+    </div>
+</div>
